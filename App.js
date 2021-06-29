@@ -1,23 +1,29 @@
-import type { Node } from "react";
 import React, { createRef } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { SafeAreaProvider } from "react-native-safe-area-context/src/SafeAreaContext";
 import RootNavigator from "./src/routes";
+import { Provider } from "mobx-react/src/Provider";
+import stores from "./src/stores";
 
 const navigationRef = createRef();
 const routeNameRef = createRef();
 
-const App: () => Node = () => {
-  return (
-    <SafeAreaProvider>
-      <NavigationContainer
-        ref={navigationRef}
-        children={RootNavigator()}
-        onReady={onNavigationReady}
-        onStateChange={onNavigationStateChange}/>
-    </SafeAreaProvider>
-  );
-};
+class App extends React.Component {
+  render() {
+    console.log('stores', stores);
+    return (
+      <Provider {...stores}>
+        <SafeAreaProvider>
+          <NavigationContainer
+            ref={navigationRef}
+            children={RootNavigator()}
+            onReady={onNavigationReady}
+            onStateChange={onNavigationStateChange}/>
+        </SafeAreaProvider>
+      </Provider>
+    );
+  };
+}
 
 const onNavigationReady = () => {
   const currentRouteName = navigationRef?.current?.getCurrentRoute()?.name;

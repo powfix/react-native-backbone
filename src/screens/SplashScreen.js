@@ -1,6 +1,6 @@
 import React from "react";
 import { Text, View } from "react-native";
-
+import { inject } from "mobx-react/src/inject";
 
 class Screen extends React.Component {
   render() {
@@ -12,4 +12,4 @@ class Screen extends React.Component {
   }
 }
 
-export default Screen;
+export default inject('sessionStore')(Screen);
