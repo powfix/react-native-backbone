@@ -1,4 +1,4 @@
-package com.backbone;
+package kr.vhd.rn_backbone;
 
 import com.facebook.react.ReactActivity;
 

@@ -131,7 +131,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.backbone"
+        applicationId "kr.vhd.rn_backbone"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
