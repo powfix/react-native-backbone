@@ -14,7 +14,7 @@
 		4DEAC75B02A7B5D6A50A06EC /* libPods-backbone-backboneTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB06F73D94E160444C357D00 /* libPods-backbone-backboneTests.a */; };
 		6C822C7063E2BDAFAC424AF9 /* libPods-backbone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B1CFE0A72D38FB8229F7C9C /* libPods-backbone.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		BAB965B1268D8E1300D7E0ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAB965B0268D8E1300D7E0ED /* GoogleService-Info.plist */; };
+		BAB965B8268DA66700D7E0ED /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAB965B7268DA66700D7E0ED /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +42,8 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = backbone/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = backbone/main.m; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = backbone/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BAB965B0268D8E1300D7E0ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BAB965B2268DA36F00D7E0ED /* backbone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = backbone.entitlements; path = backbone/backbone.entitlements; sourceTree = "<group>"; };
+		BAB965B7268DA66700D7E0ED /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB06F73D94E160444C357D00 /* libPods-backbone-backboneTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-backbone-backboneTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF437A3A92CC965903B09708 /* Pods-backbone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-backbone.release.xcconfig"; path = "Target Support Files/Pods-backbone/Pods-backbone.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -131,7 +131,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				BAB965B0268D8E1300D7E0ED /* GoogleService-Info.plist */,
+				BAB965B7268DA66700D7E0ED /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* backbone */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* backboneTests */,
@@ -250,7 +250,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				BAB965B1268D8E1300D7E0ED /* GoogleService-Info.plist in Resources */,
+				BAB965B8268DA66700D7E0ED /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

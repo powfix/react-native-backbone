@@ -37,6 +37,13 @@
             {
               "client_id": "926803433559-14c1u5chmimmb52tgmvf63a0iteoqk6g.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "926803433559-agbcqgm2qfi72n87mo84k7n54eo3au72.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "kr.vhd.rn-backbone"
+              }
             }
           ]
         }
