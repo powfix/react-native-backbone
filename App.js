@@ -4,6 +4,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context/src/SafeAreaCon
 import RootNavigator from "./src/routes";
 import { Provider } from "mobx-react/src/Provider";
 import stores from "./src/stores";
+import analytics from "@react-native-firebase/analytics";
 
 const navigationRef = createRef();
 const routeNameRef = createRef();
@@ -38,6 +39,10 @@ const onNavigationStateChange = async () => {
   if (previousRouteName !== currentRouteName) {
     console.log('NavigationContainer:onNavigationStateChange()', previousRouteName, '->', currentRouteName);
     // 추적코드
+    await analytics().logScreenView({
+      screen_name: currentRouteName,
+      screen_class: currentRouteName,
+    });
   }
 
   // Save the current route name for later comparison
